@@ -292,7 +292,7 @@ if uploaded_file is not None:
                     xaxis_title="Date",
                     yaxis_title="Residuals (Actual - Predicted)",
                     template="plotly_white",
-                    height=300,
+                    height=450,
                 )
                 st.plotly_chart(fig_res1, use_container_width=True)
 
@@ -312,7 +312,7 @@ if uploaded_file is not None:
                     xaxis_title="Residuals",
                     yaxis_title="Frequency",
                     template="plotly_white",
-                    height=300,
+                    height=450,
                 )
                 st.plotly_chart(fig_res2, use_container_width=True)
 
@@ -381,8 +381,8 @@ if uploaded_file is not None:
             yaxis_title="Average Price (USD)",
             yaxis_tickformat="$,.2f",
             template="plotly_white",
-            height=400,
-            font=dict(family="Arial", size=12),
+            height=550,
+            font=dict(family="Arial", size=14),
             hovermode="x unified",
             showlegend=True,
         )
@@ -425,8 +425,8 @@ if uploaded_file is not None:
             yaxis_title="Average Price (USD)",
             yaxis_tickformat="$,.2f",
             template="plotly_white",
-            height=400,
-            font=dict(family="Arial", size=12),
+            height=550,
+            font=dict(family="Arial", size=14),
             hovermode="x unified",
             showlegend=True,
         )
@@ -496,8 +496,8 @@ if uploaded_file is not None:
             yaxis_title="Average Price (USD)",
             yaxis_tickformat="$,.2f",
             template="plotly_white",
-            height=400,
-            font=dict(family="Arial", size=12),
+            height=550,
+            font=dict(family="Arial", size=14),
             hovermode="x unified",
             showlegend=True,
         )
