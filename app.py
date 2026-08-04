@@ -75,7 +75,11 @@ data_source = st.sidebar.radio(
 )
 
 if data_source == "Use a sample coin":
-    coin_choice = st.sidebar.selectbox("Pick a coin:", list(sample_files.keys()))
+    coin_choice = st.sidebar.selectbox(
+        "Pick a coin:",
+        list(sample_files.keys()),
+        index=list(sample_files.keys()).index("Solana (SOL)")
+    )
     uploaded_file = sample_files[coin_choice]
 else:
     st.sidebar.markdown(
