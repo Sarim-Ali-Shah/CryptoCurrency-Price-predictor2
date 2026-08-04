@@ -58,6 +58,7 @@ def load_data(file, date_col, price_col, volume_col=None):
 
 
 # Streamlit app
+st.set_page_config(layout="wide")
 st.title("Cryptocurrency Price Analysis and Prediction")
 
 # Sidebar - Data source selection
