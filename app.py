@@ -252,9 +252,12 @@ if uploaded_file is not None:
             yaxis_title="Price (USD)",
             yaxis_tickformat="$,.2f",
             template="plotly_white",
-            height=400,
-            font=dict(family="Arial", size=12),
+            height=650,
+            font=dict(family="Arial", size=14),
             hovermode="x unified",
+            legend=dict(
+                orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1
+            ),
         )
         st.plotly_chart(fig1, use_container_width=True)
 
